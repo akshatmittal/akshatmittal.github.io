@@ -1,0 +1,17 @@
+.main-color, a, .navbar .nav>li.active>a, .navbar .nav>li.active>a:hover, .navbar .nav>li.active>a:hover i, .navbar .nav>li.active>a>i,.navbar .brand:hover span,
+.btn.btn-clear:hover, .btn.btn-clear.selected{
+	color: #A6C2FF;
+}
+a:hover{
+	color: #A6C2FF;
+	border-bottom: 1px dotted;
+}
+.navbar .nav>li.active>a, .navbar .nav>li.active>a:hover, .navbar .nav>li>a:hover{
+	border-right: 3px solid #6893f5;
+}
+.btn{
+	background: #6893f5;
+}
+.btn:hover, .btn.selected, .btn.btn-clear.selected, .btn.btn-clear:hover{
+	background: #3559aa;
+}
