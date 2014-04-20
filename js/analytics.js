@@ -10,3 +10,4 @@ $("a").on('click', function(){ga('send', 'event', 'Tag click: a', 'click');}); /
 $("button").on('click', function(){ga('send', 'event', 'Tag click: button', 'click');}); // For nav analysis
 $(document).on('click', function() {ga('send', 'event', 'Page click', 'click');}); // Heat analysis
 $("img").on('click', function(){ga('send', 'event', 'Tag click: img', 'click');}); // Img analysis
+window.onresize = function() {ga('send', 'event', 'Window Resized', 'click');} // Why will they even resize the window?
