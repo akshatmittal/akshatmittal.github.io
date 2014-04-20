@@ -11,3 +11,6 @@ $("button").on('click', function(){ga('send', 'event', 'Tag click: button', 'cli
 $(document).on('click', function() {ga('send', 'event', 'Page click', 'click');}); // Heat analysis
 $("img").on('click', function(){ga('send', 'event', 'Tag click: img', 'click');}); // Img analysis
 window.onresize = function() {ga('send', 'event', 'Window Resized', 'click');} // Why will they even resize the window?
+window.onload = function() {
+	if (self != top) top.location = self.location;
+}
