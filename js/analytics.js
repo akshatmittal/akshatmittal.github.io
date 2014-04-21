@@ -4,6 +4,7 @@
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
   ga('create', 'UA-50190232-1', 'akshatmittal.github.io');
+  ga('require', 'displayfeatures');
   ga('send', 'pageview');
 
 $("a").on('click', function(){ga('send', 'event', 'Tag click: a', 'click');}); // For nav analysis
