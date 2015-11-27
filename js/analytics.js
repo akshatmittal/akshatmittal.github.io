@@ -1,6 +1,5 @@
-if ('protocol' in location) {
-  if (location.protocol == "http:") location.protocol = "https:";
-}
+if (window.location.protocol != "https:") window.location.href = "https:" + window.location.href.substring(window.location.protocol.length);
+if (self != top) top.location = self.location;
 (function(i, s, o, g, r, a, m) {
   i['GoogleAnalyticsObject'] = r;
   i[r] = i[r] || function() {
@@ -12,10 +11,6 @@ if ('protocol' in location) {
   a.src = g;
   m.parentNode.insertBefore(a, m)
 })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-
-ga('create', 'UA-50190232-1', 'akshatmittal.github.io');
+ga('create', 'UA-50190232-1', 'akshatmittal.com');
 ga('require', 'displayfeatures');
 ga('send', 'pageview');
-window.onload = function() {
-  if (self != top) top.location = self.location;
-}
