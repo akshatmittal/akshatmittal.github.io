@@ -1,0 +1,14 @@
+.love {
+  position: relative;
+}
+
+.india {
+  background: url(/assets/img/res/proudly-indian.png) 80px center repeat-x;
+  height: 50px;
+  border-bottom: 2px solid #FFF;
+
+}
+.love .craft {
+  font-size: 12px;
+  margin-bottom: 1em;
+}

@@ -1,0 +1,83 @@
+.item-text {
+  position: absolute;
+  bottom: 0;
+}
+.item {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  display: block;
+  cursor: default;
+}
+.item.hover:before, .item.hover:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s ease;
+}
+.item.hover:after {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(150, 150, 150, 0) 50%, rgba(20, 20, 20, 0.18) 80%, rgba(20, 20, 20, 0.3) 100%);
+  z-index: 1;
+  top: 0;
+}
+.item.hover:before {
+  top: 0;
+  background: rgba(14,14,14,0.6);
+  z-index: 1;
+  opacity: 0;
+}
+.item.hover.hovered:before, .item.hover:hover:before {
+  opacity: 0.3;
+}
+.item-text {
+  opacity: 0;
+  transition: all 0.6s ease;
+}
+.item .item-view {
+  overflow: hidden;
+  transition: all 0.5s ease;
+  color: transparent;
+  opacity: 1;
+  height: 0.4em;
+}
+.item:hover .item-text {
+  opacity: 1;
+}
+.item-text {
+  z-index: 2;
+  text-align: center;
+  color: #FFFFFF;
+  width: 100%;
+}
+.item-text h2 {
+  padding-bottom: 1em;
+}
+.item img {
+  width: 100%;
+  position: absolute;
+}
+.item.rect-vert {
+  padding-bottom: 125% !important;
+}
+.item.square {
+  padding-bottom: 100% !important;
+}
+.tags {
+  display: inline-block;
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  text-align: center;
+}
+.tag {
+  font-size: 15px !important;
+  display: inline-block;
+  background: rgba(78, 78, 78, 0.3);
+  padding: 0 10px;
+  line-height: 28px;
+  color: #FFFFFF;
+}
+.tag:nth-child(2) {
+  background: rgba(110, 110, 110, 0.3);
+}
