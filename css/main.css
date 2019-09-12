@@ -24,7 +24,7 @@ body {
   font-style: normal;
   font-weight: normal;
   line-height: 1.765;
-  color: #555555;
+  color: #777;
   margin: 0;
   padding: 0;
 }
@@ -123,7 +123,7 @@ p.lead {
   font-size: 2.4rem;
   line-height: 1.55;
   margin-bottom: 3.6rem;
-  color: #555555;
+  color: #777;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -255,7 +255,7 @@ form {
   line-height: 1.25;
   text-transform: uppercase;
   letter-spacing: 0.15rem;
-  color: #4e48ee;
+  color: #4f79f1;
   margin-top: 0;
   margin-bottom: 2.15rem;
 }
@@ -387,7 +387,7 @@ form {
   display: block;
   width: 7.5rem;
   height: 1px;
-  background-color: #4e48ee;
+  background-color: #4f79f1;
   position: absolute;
   left: 0.25rem;
   top: 2.55rem;
@@ -731,7 +731,7 @@ html.loaded .home-content__main {
 }
 
 .grey {
-  color: #555555;
+  color: #777;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -985,7 +985,7 @@ html.loaded .home-content__main {
   display: block;
   height: 1px;
   width: 60px;
-  background-color: #4e48ee;
+  background-color: #4f79f1;
   position: absolute;
   top: 0;
   left: 0;
